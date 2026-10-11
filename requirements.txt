@@ -1,0 +1,21 @@
+# Core LLM & Embeddings
+openai>=1.40.0
+python-dotenv>=1.0.1
+
+# LangChain & Text Splitting
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-text-splitters>=0.3.0
+langchain-openai>=0.2.0
+langchain-chroma>=0.1.4
+
+# Vector DB & Hybrid Search
+chromadb>=0.5.0
+rank-bm25>=0.2.2
+
+# Document Parsing & Utilities
+pypdf>=4.3.0
+requests>=2.32.0
+
+# User Interface
+gradio>=5.0.0
