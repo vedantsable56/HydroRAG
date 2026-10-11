@@ -1,13 +1,3 @@
----
-title: HydroRAG
-emoji: 🌱
-colorFrom: green
-colorTo: blue
-sdk: gradio
-app_file: app.py
-pinned: false
----
-
 # 🌱 HydroRAG — Precision Hydroponics Knowledge Assistant
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
@@ -32,7 +22,7 @@ Standard LLMs face two major issues:
 
 ---
 
-## 💡 The Solution: Hybrid Search + Reciprocal Rank Fusion (RRF)
+## ⚡ The Solution: Hybrid Search + Reciprocal Rank Fusion (RRF)
 
 **HydroRAG** combines **Dense Semantic Search** (ChromaDB) with **Sparse Lexical Search** (BM25 Okapi) fused via **Reciprocal Rank Fusion (RRF)**:
 
@@ -44,7 +34,7 @@ $$\text{RRF Score}(d) = \frac{1}{60 + \text{rank}_{\text{dense}}(d)} + \frac{1}{
 
 ---
 
-## 🏛️ System Architecture
+## 🏗️ System Architecture
 
 ```mermaid
 flowchart TD
@@ -90,10 +80,10 @@ flowchart TD
 ## ✨ Key Features
 
 - **⚡ Hybrid RRF Search:** Combines semantic vector similarity with BM25 keyword matching for high-precision retrieval.
-- **🌿 Crop-Specific Scoping:** Metadata filtering allows targeting specific crops (`tomatoes`, `lettuce`, `strawberries`, `cucumbers`, `basil`, `capsicum`) or querying across the entire corpus.
-- **📑 Verifiable Evidence:** Every generated answer cites exact source PDFs and page numbers.
-- **⏱️ Small-Talk Bypass:** Gracefully handles greetings without wasting database queries or printing false citations.
-- **💻 Clean Gradio UI:** Minimalist, fast, and human-crafted web interface without bloated templates.
+- **🌱 Crop-Specific Scoping:** Metadata filtering allows targeting specific crops (`tomatoes`, `lettuce`, `strawberries`, `cucumbers`, `basil`, `capsicum`) or querying across the entire corpus.
+- **📄 Verifiable Evidence:** Every generated answer cites exact source PDFs and page numbers.
+- **💬 Small-Talk Bypass:** Gracefully handles greetings without wasting database queries or printing false citations.
+- **🎨 Clean Gradio UI:** Minimalist, fast, and human-crafted web interface without bloated templates.
 
 ---
 
@@ -171,23 +161,23 @@ Open **`http://127.0.0.1:7860`** in your browser.
 
 ---
 
-## 🔬 Example Output
+## 💬 Example Output
 
 > **User:** *"What is the ideal temperature for tomatoes in hydroponics?"*
 > 
 > **HydroRAG:**
-> - **Germination:** Optimum soil temperature is ~29.5°C (tolerable range 8–35°C) `[2]`.
-> - **Development Stages:** Seedling stage thrives at 16–29.5°C; flowering at 19–22°C sunny / 15–16°C cloudy; harvesting at 23–25°C sunny `[1]`.
-> - **Air Temperature:** Maintain average temperature above 18.3°C; temperatures below 12°C significantly reduce yield and quality `[3]`.
+> - **Germination:** Optimum soil temperature is ~29.5°C (tolerable range 16–29.5°C) `[2]`.
+> - **Development Stages:** Leaf and truss development thrives at ~22°C; fruit addition and growth are best at 22–26°C `[3]`.
+> - **Air Temperature:** Maintain average temperature between 17–27°C; temperatures below 12°C significantly reduce yield and quality `[1]`.
 > 
 > **Sources:**
-> - `[1] tomatoes_01.pdf (Page 4)`
-> - `[2] tomatoes_02.pdf (Page 6)`
+> - `[1] tomatoes_02.pdf (Page 4)`
+> - `[2] tomatoes_02.pdf (Page 4)`
 > - `[3] tomatoes_02.pdf (Page 3)`
 
 ---
 
-## 📜 License
+## 📄 License
 
 This project is licensed under the **MIT License**.
 
