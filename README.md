@@ -1,14 +1,3 @@
----
-title: HydroRAG
-emoji: 🌱
-colorFrom: green
-colorTo: blue
-sdk: gradio
-sdk_version: 5.0.0
-app_file: app.py
-pinned: false
----
-
 # 🌱 HydroRAG — Precision Hydroponics Knowledge Assistant
 
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
@@ -120,7 +109,6 @@ HydroRAG/
 ├── app.py                      # Interactive Gradio web interface
 │
 ├── requirements.txt            # Python dependencies
-├── .env.example                # Template for environment variables
 └── .gitignore                  # Git exclusion rules
 ```
 
