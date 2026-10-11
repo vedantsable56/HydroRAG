@@ -5,6 +5,13 @@ import gradio as gr
 from config import CROPS
 from rag_engine import RAGEngine
 
+# Cloud Auto-Init: If database doesn't exist (like on Hugging Face), build it automatically!
+if not BM25_INDEX_PATH.exists() or not CHROMA_DIR.exists():
+    print("⚡ Database not found. Running initial ingestion...")
+    from ingest import main as run_ingestion
+    run_ingestion()
+
+
 # Initialize the RAG engine
 engine = RAGEngine()
 
