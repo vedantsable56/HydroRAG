@@ -2,7 +2,7 @@
 app.py — Gradio Web Interface for HydroRAG.
 """
 import gradio as gr
-from config import CROPS
+from config import CROPS, CHROMA_DIR, BM25_INDEX_PATH
 from rag_engine import RAGEngine
 
 # Cloud Auto-Init: If database doesn't exist (like on Hugging Face), build it automatically!
