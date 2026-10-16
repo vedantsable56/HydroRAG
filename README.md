@@ -119,6 +119,8 @@ HydroRAG/
 
 ## 🚀 Quick Start
 
+You need **Python 3.10+** and an **OpenAI API key**. Prefer the [live demo](https://huggingface.co/spaces/vedantsable/HydroRAG) if you only want to try questions without a local setup.
+
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/vedantsable56/HydroRAG.git
