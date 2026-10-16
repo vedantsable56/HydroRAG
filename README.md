@@ -5,10 +5,13 @@
 [![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector_Store-FF6F00?style=flat)](https://www.trychroma.com/)
 [![BM25](https://img.shields.io/badge/Retrieval-BM25_Okapi-blueviolet?style=flat)](https://github.com/dorianbrown/rank_bm25)
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o--mini-10B981?style=flat&logo=openai&logoColor=white)](https://platform.openai.com/)
-[![Gradio UI](https://img.shields.io/badge/UI-Gradio_5.0-F97316?style=flat&logo=gradio&logoColor=white)](https://gradio.app/)
+[![Gradio UI](https://img.shields.io/badge/UI-Gradio-F97316?style=flat&logo=gradio&logoColor=white)](https://gradio.app/)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97-Live_Demo-yellow.svg)](https://huggingface.co/spaces/vedantsable/HydroRAG)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > A domain-specific **Hybrid RAG (Retrieval-Augmented Generation)** assistant that answers precision hydroponic and controlled-environment farming questions grounded in **peer-reviewed scientific literature** and agricultural extension guides.
+
+Try the live demo: [HydroRAG on Hugging Face Spaces](https://huggingface.co/spaces/vedantsable/HydroRAG).
 
 ---
 
