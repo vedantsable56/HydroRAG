@@ -35,9 +35,10 @@ def chat(message, history, crop, mode):
     if not cleaned:
         return ""
 
-    # 1. Quick greeting handling
-    greetings = ["hi", "hello", "hey", "hii", "hii there", "hello there", "thanks", "thank you"]
-    if cleaned.lower() in greetings:
+    # 1. Quick greeting handling (ignore trailing punctuation)
+    greetings = {"hi", "hello", "hey", "hii", "hii there", "hello there", "hey there", "thanks", "thank you"}
+    greeting_text = cleaned.lower().strip(" !.?,")
+    if greeting_text in greetings:
         return "Hello! I am HydroRAG. Ask me any question about hydroponic crops, nutrient solutions (EC/pH), or environmental controls!"
 
     # 2. Map radio choice to backend search mode

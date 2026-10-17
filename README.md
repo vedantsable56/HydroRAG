@@ -113,6 +113,7 @@ HydroRAG/
 ├── app.py                      # Interactive Gradio web interface
 │
 ├── requirements.txt            # Python dependencies
+├── LICENSE                     # MIT license
 └── .gitignore                  # Git exclusion rules
 ```
 
@@ -164,6 +165,27 @@ python ingest.py
 python app.py
 ```
 Open **`http://127.0.0.1:7860`** in your browser.
+
+---
+
+## 🔎 Search Modes
+
+Use the radio control in the UI to compare retrievers:
+
+| Mode | What it does | Best for |
+| --- | --- | --- |
+| **Hybrid Search** (default) | Fuses ChromaDB dense ranks with BM25 keyword ranks using RRF | Most questions, especially mixed concept + exact values |
+| **Vector Only** | Semantic similarity in ChromaDB | Paraphrased questions (*"soilless tomato climate"*) |
+| **Keyword (BM25)** | Sparse lexical match | Exact terms (`EC 2.2`, `Fe-EDDHA`, `Pythium`) |
+
+---
+
+## 🛠️ Troubleshooting
+
+- **`OPENAI_API_KEY is missing`:** Create `.env` in the project root (see step 3). Do not commit that file.
+- **`BM25 index not found`:** Run `python ingest.py` before `python app.py` on a fresh machine. Hugging Face Spaces runs ingestion automatically if indices are missing.
+- **UI fails to import Gradio:** Reinstall from `requirements.txt` (`gradio` is required for the local web app).
+- **Empty or weak answers:** Set the crop filter to the crop you care about, or switch to Hybrid Search. Citations appear only when retrieved chunks are used.
 
 ---
 
