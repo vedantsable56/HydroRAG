@@ -87,6 +87,7 @@ flowchart TD
 - **📄 Verifiable Evidence:** Every generated answer cites exact source PDFs and page numbers.
 - **💬 Small-Talk Bypass:** Gracefully handles greetings without wasting database queries or printing false citations.
 - **🎨 Clean Gradio UI:** Minimalist, fast, and human-crafted web interface without bloated templates.
+- **🤗 Hugging Face Space:** Hosted demo on the free tier, with ZeroGPU support for Space runtimes.
 
 ---
 
